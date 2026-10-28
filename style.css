@@ -1,0 +1,133 @@
+body{
+    background-color: rgb(247, 244, 244);
+}
+
+
+main{
+            min-height: 100dvh;
+            width: 900px;
+            margin-left: 100px;
+            height: 100px;
+    
+        }
+
+ .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        grid-template-areas: 
+        "box1 box1 box1 box2"
+        "box1 box1 box1 box3"
+        "box4 box4 box5 box5"
+         "box4 box4 box6 box7";
+
+}
+
+
+.box1, .box2, .box3, .box6{
+    border: 1px solid rgb(226, 224, 220);
+    padding: 10px;
+    background-color: white;
+
+}
+.box1:hover{
+    box-shadow: 0 10px 25px rgb(48, 43, 43);
+    transform: translateY(-5px);
+ }
+
+ .box2:hover{box-shadow: 0 10px 25px rgb(54, 48, 53);
+    transform: translateX(-3px);
+    
+ }
+
+ .box3:hover{box-shadow: 0 10px 25px rgb(57, 66, 83);
+    transform: translateY(-3px);
+    
+ }
+ .box4:hover{box-shadow: 0 10px 25px rgb(27, 21, 21);
+    transform: translateY(-3px);
+    
+ }
+ .box5:hover{box-shadow: 0 10px 25px rgb(204, 185, 185);
+    transform: translateY(-3px);
+    
+ }
+ .box6:hover{box-shadow: 0 10px 25px rgb(110, 90, 90);
+    transform: translateY(-3px);
+    
+ }
+ .box7:hover{box-shadow: 0 10px 25px rgb(58, 49, 49);
+    transform: translateY(-3px);
+    
+ }
+
+.box4, .box5{
+    border: 1px solid rgb(229, 220, 203);
+    padding: 10px;
+    border-radius: 1px;
+    background-color: white;
+
+
+}
+.box7{
+    background-color: black;
+    color: whitesmoke;
+    padding-left: 50px;
+    border: 1px solid;
+}
+header{
+    display: flex;
+    word-spacing: 80px;
+    margin: 20px
+}
+#span1{
+    font-size: 2em;
+    font-style: italic;
+    color: blue;
+}
+#button1{
+    padding: 20px;
+    border-radius: 28px;
+    background-color: black;
+    color: azure;
+    cursor: all-scroll;
+}
+.card1{
+    display: flex;
+    justify-content: space-between;
+}
+.card2{
+    margin-top: 150px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-style: italic;
+}
+#web{
+    color: rgb(13, 107, 49);
+    
+}
+#Resume{
+    color: green;
+}
+#benue{
+    word-spacing: 15px;
+}
+
+#no{
+    color: rgb(214, 198, 177);
+    padding: 10px;
+}
+#green-dot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(5, 70, 5);
+    border-radius: 360px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
